@@ -35,17 +35,18 @@ public class LoginTestCase {
 	public void testMain() {
 		driver.get("http://www.avon.com.br/");
 		driver.manage().window().maximize();
-		this.homePage.accessRegistrationPage();
+		Report.log(Status.INFO, "The website was loaded.", ScreenShot.capture(driver));
+				this.homePage.accessRegistrationPage();
 		
-		//driver.get("https://www.avoncomigo.avon.com.br/widget/avonwg2/#/login");
+		driver.get("https://www.avoncomigo.avon.com.br/widget/avonwg2/#/login");
 		driver.manage().window().maximize();
 		
 				
-		Report.log(Status.INFO, "The website was loaded.", ScreenShot.capture(driver));
+		//Report.log(Status.INFO, "The website was loaded.", ScreenShot.capture(driver));
 		
 		logintask.fillForm("65846980", "6965fi");
 		
-		Report.log(Status.INFO, "Dados inseridos no formulario.", ScreenShot.capture(driver));
+		//Report.log(Status.INFO, "Dados inseridos no formulario.", ScreenShot.capture(driver));
 
 		verificationPoint.checkInvalidLoginMessage();
 	}

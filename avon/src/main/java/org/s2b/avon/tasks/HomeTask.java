@@ -15,8 +15,14 @@ public class HomeTask {
 	public void accessRegistrationPage(){
 		home.getLoginButton().click();
 	}
+	public void accessRetailerNew() {
+		home.getRetailerNewButton().click();
+	}
+	public void acessRetailerSearch() {
+		home.getRetailerSearchButton().click();
+	}
 	
 	/*public void logout() {
-		home.getLoginButton().click();
+		home.().click();
 		}*/
 	}

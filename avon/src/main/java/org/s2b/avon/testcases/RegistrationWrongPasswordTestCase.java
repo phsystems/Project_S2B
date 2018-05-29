@@ -36,11 +36,13 @@ public class RegistrationWrongPasswordTestCase {
 		
 		Report.log(Status.INFO, "The website has started.", ScreenShot.capture(driver));
 		
-		homePage.accessRegistrationPage();
+		driver.get("https://www.avoncomigo.avon.com.br/widget/avonwg2/#/login");
+		driver.manage().window().maximize();
+		//this.homePage.accessRegistrationPage();
 		
 		Report.log(Status.INFO, "Register Page loaded.", ScreenShot.capture(driver));
 		
-		loginPage.fillForm("65846980", "6965fi");		
+		loginPage.fillForm("invalid", "invalid");		
 		loginPage.toRegister();
 		
 		verificationPoint.checkInvalidLoginMessage();

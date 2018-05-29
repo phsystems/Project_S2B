@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import com.aventstack.extentreports.Status;
 import org.s2b.avon.framework.*;
 public class LoginVerificationPoint {
-private static final String INVALID_LOGIN_MESSAGE = "Username and password do not match or you do not have an account yet.";
+private static final String INVALID_LOGIN_MESSAGE = "Seu Registro/Asc ou senha estão incorretos. Por favor, tente novamente.";
 	
 	private WebDriver driver;
 	
