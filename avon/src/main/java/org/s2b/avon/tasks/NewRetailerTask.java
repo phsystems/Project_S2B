@@ -10,7 +10,7 @@ public class NewRetailerTask {
 	public NewRetailerTask(WebDriver driver) {
 		this.newRetailer = new NewRetailerAppObject(driver);
 	}
-	public void newFillForm (String firstName, String lastName, String dateOfBirth, String cpfNumber, String email, String confEmail, String dayPhoneOne, String dayPhoneTwo, String mobPhoneOne, String mobPhoneTwo, String time, String postcode, String addressOne, String addressThree) {
+	public void newFillForm (String firstName, String lastName, String dateOfBirth, String cpfNumber, String email, String confEmail, String dayPhoneOne, String dayPhoneTwo, String mobPhoneOne, String mobPhoneTwo, String time, String postcode, String addressOne, String addressTwo, String addressThree, String strNeighborhood) {
 		
 		newRetailer.getFirstNameTextField().sendKeys(firstName);
 		newRetailer.getlastNameeTextField().sendKeys(lastName);
@@ -24,8 +24,10 @@ public class NewRetailerTask {
 		newRetailer.getCellPhoneOneTextField().sendKeys(mobPhoneTwo);
 		//newRetailer.getChoiceTimeComboBox().sendKeys(Keys.valueOf(enumType, name));
 		newRetailer.getCEPTextField().sendKeys(postcode);
-		newRetailer.getAddressTextField().sendKeys(addressOne);
+		newRetailer.getAddressStreetTextField().sendKeys(addressOne);
+		newRetailer.getAddressNumberTextField().sendKeys(addressTwo);
 		newRetailer.getFullAddressTextField().sendKeys(addressThree);
+		newRetailer.getNeighborhoodTextField().sendKeys(strNeighborhood);
 		newRetailer.getTermAndConditions().click();
 			
 	}

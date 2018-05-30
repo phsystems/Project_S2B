@@ -53,17 +53,23 @@ public class NewRetailerAppObject {
 		public WebElement getCEPTextField() {
 			return driver.findElement(By.name("postcode"));
 		}
-		public WebElement getAddressTextField() {
+		public WebElement getAddressStreetTextField() {
 			return driver.findElement(By.name("addressOne"));
 		}
+		public WebElement getAddressNumberTextField() {
+			return driver.findElement(By.name("addressTwo"));
+		}		
 		public WebElement getFullAddressTextField() {
 			return driver.findElement(By.name("addressThree"));
+		}
+		public WebElement getNeighborhoodTextField() {
+			return driver.findElement(By.name("strNeighborhood"));
 		}
 		public WebElement getTermAndConditions() {
 			return driver.findElement(By.name("terms"));
 		}	
 		public WebElement getCreateButton() {
-			return driver.findElement(By.cssSelector("body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td > div > form > table > tbody > tr > td > table > tbody > tr:nth-child(7) > td > table > tbody > tr > td:nth-child(3) > a > button"))
+			return driver.findElement(By.cssSelector("body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td > div > form > table > tbody > tr > td > table > tbody > tr:nth-child(7) > td > table > tbody > tr > td:nth-child(3) > a > button"));
 		}
 		
 }

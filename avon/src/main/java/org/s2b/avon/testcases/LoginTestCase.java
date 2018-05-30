@@ -21,7 +21,7 @@ public class LoginTestCase {
 	@Before
 	public void setUp() {
 		Report.startTest("Login");
-		driver = Drives.getFirefoxDriver();
+		this.driver = Drives.getFirefoxDriver();
 		//driver.get("http://www.avon.com.br/");
 		//driver.manage().window().maximize();		
 		homePage = new HomeTask(driver);
@@ -36,23 +36,23 @@ public class LoginTestCase {
 		driver.get("http://www.avon.com.br/");
 		driver.manage().window().maximize();
 		Report.log(Status.INFO, "The website was loaded.", ScreenShot.capture(driver));
-				this.homePage.accessRegistrationPage();
+				//this.homePage.accessRegistrationPage();
 		
 		driver.get("https://www.avoncomigo.avon.com.br/widget/avonwg2/#/login");
 		driver.manage().window().maximize();
 		
 				
-		//Report.log(Status.INFO, "The website was loaded.", ScreenShot.capture(driver));
+		Report.log(Status.INFO, "The website was loaded.", ScreenShot.capture(driver));
 		
 		logintask.fillForm("65846980", "6965fi");
 		
-		//Report.log(Status.INFO, "Dados inseridos no formulario.", ScreenShot.capture(driver));
+		Report.log(Status.INFO, "Dados inseridos no formulario.", ScreenShot.capture(driver));
 
 		verificationPoint.checkInvalidLoginMessage();
 	}
 	@After
 	public void tearDown() {
-		driver.quit();
+		this.driver.quit();
 	}
 	
 
