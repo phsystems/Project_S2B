@@ -45,7 +45,6 @@ public class LoginTestCase {
 
 	@Test
 	public void passTest() throws IOException {
-		logger = extent.startTest("passTest");
 		driver.get("http://www.avon.com.br/");
 		driver.manage().window().maximize();
 		Reports.log(LogStatus.INFO, "The website has started.", ScreenShot.capture(driver));
