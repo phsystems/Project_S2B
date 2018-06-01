@@ -1,5 +1,7 @@
 package org.s2b.avon.testsuites;
 
+import java.io.IOException;
+
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
@@ -17,12 +19,12 @@ import org.s2b.avon.testcases.*;
 public class RegressionTestSuite {
 	@BeforeClass
 	public static void initTest() {
-		Report.create("Avon", "Suite de Regressao");
+		Reports.create("Avon", "Suite de Regressao");
 	}
 
 	@AfterClass
-	public static void endTest() {
-		Report.close();
+	public static void endTest() throws IOException {
+		Reports.close();
 	}
 
 }

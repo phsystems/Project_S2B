@@ -41,18 +41,19 @@ public class NewRetailerAppObject {
 		public WebElement getCellPhoneOneTextField() {
 			return driver.findElement(By.name("mobPhoneTwo"));
 		}
-		/*public WebElement getChoiceTime(WebElement value) {
-		WebElement element = this.driver.findElement(By.name("prefTime"));
-		Select combo = new Select(element);
-		combo.selectByValue("value");
-		return value;
-		}*/
+		public WebElement getChoiceTime() {
+			return driver.findElement(By.name("prefTime"));
+		}	
 		public WebElement getChoiceTimeComboBox() {
 			return driver.findElement(By.name("prefTime"));
 		}
 		public WebElement getCEPTextField() {
 			return driver.findElement(By.name("postcode"));
 		}
+		public WebElement getTownTextField() {
+			return driver.findElement(By.name("town"));
+		}
+		
 		public WebElement getAddressStreetTextField() {
 			return driver.findElement(By.name("addressOne"));
 		}

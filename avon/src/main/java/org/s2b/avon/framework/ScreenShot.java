@@ -7,7 +7,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
-import com.aventstack.extentreports.Status;
+import com.relevantcodes.extentreports.LogStatus;
 
 public class ScreenShot {
 	public static String capture(WebDriver driver) {
@@ -20,7 +20,7 @@ public class ScreenShot {
 		try {
 	        FileUtils.copyFile(source, new File(path)); 
 	    } catch(IOException ex) {
-	    	Report.log(Status.WARNING, "Capture error: " + ex.getMessage());
+	    	Reports.log(LogStatus.WARNING, "Capture error: " + ex.getMessage());
 	    }
 	    return path.replace("./reports/", "");
 	}
