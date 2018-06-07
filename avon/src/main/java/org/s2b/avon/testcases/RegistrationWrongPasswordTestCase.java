@@ -30,7 +30,7 @@ public class RegistrationWrongPasswordTestCase {
 		loginPage = new LoginTask(driver);
 		verificationPoint = new LoginVerificationPoint(driver);
 	}
-
+	
 	@Test
 	public void testMain() throws IOException {
 		driver.get("https://www.avoncomigo.avon.com.br/widget/avonwg2/#/login");

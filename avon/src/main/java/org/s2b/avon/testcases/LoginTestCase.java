@@ -25,16 +25,13 @@ public class LoginTestCase {
 	private HomeTask homePage;
 	private LoginTask logintask;
 	private LoginVerificationPoint verificationPoint;
-	ExtentReports extent;
-	ExtentTest logger;
+
 
 	@Before
 	public void setUp() {
-		// Reports.startTest("Login");
+		Reports.startTest("Login");
 
 		this.driver = Drives.getFirefoxDriver();
-		// driver.get("http://www.avon.com.br/");
-		// driver.manage().window().maximize();
 		homePage = new HomeTask(driver);
 
 		logintask = new LoginTask(driver);

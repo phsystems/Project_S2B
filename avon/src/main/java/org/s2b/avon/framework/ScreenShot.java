@@ -25,4 +25,4 @@ public class ScreenShot {
 	    return path.replace("./reports/", "");
 	}
 
-}
+} 
