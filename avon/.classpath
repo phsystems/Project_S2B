@@ -17,11 +17,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
 	<classpathentry kind="lib" path="C:/Programas/ExtentReports/extentreports-java-2.41.2/lib/ant-1.7.0.jar"/>
 	<classpathentry kind="lib" path="C:/Programas/ExtentReports/extentreports-java-2.41.2/lib/ant-launcher-1.7.0.jar"/>
@@ -37,5 +32,7 @@
 	<classpathentry kind="lib" path="C:/Programas/ExtentReports/extentreports-java-2.41.2/lib/snakeyaml-1.15.jar"/>
 	<classpathentry kind="lib" path="C:/Programas/ExtentReports/extentreports-java-2.41.2/lib/sqlite-jdbc-3.8.11.1.jar"/>
 	<classpathentry kind="lib" path="C:/Programas/ExtentReports/extentreports-java-2.41.2/lib/testng-6.9.9.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/Pedro Henrique/Desktop/Udemy/Selenium/Aula 1/CursoSelenium/opencsv-2.3.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
